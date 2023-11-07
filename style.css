@@ -116,15 +116,11 @@ body{
 
  div .texte{
  font-size: 3vh;
+ margin-left: -20vw;
 }
 
 /*Compétence*/
 
-/* .body3{
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-} */
 
 .back2{
     background-image: url(img/TEST.png);
@@ -217,8 +213,6 @@ body{
     margin-left: 15vw;
 }
 
-
-
 .cube{
     
     height: 95vh;
@@ -226,12 +220,16 @@ body{
     background-color: rgba(0, 0, 0, 0.163);
     margin-top: 50%;
     vertical-align: middle;
-  
 }
+
 
 .titre4{
     color: white;
     text-align: center; 
+    width: 20vw;
+    margin-left: 30%;
+    line-height: 7vh;
+   font-size: 4vh;
    
 }
 
@@ -295,48 +293,46 @@ height: 10vh;
     height: 100vh;
     width: 100vw;
     background-color: white;
-   
-
 }
+.cotedroit2{
+    height: 100vh;
+    width: 45vw;
+    background-image: url(img/pexels-karolina-grabowska-6805420.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+ }
+
 .cotegauche2{
     height: 100vh;
-    width: 50vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;  
-    margin-top: 10vh;
-  
+    margin-top: 30vh; 
+    margin-left: 16vw;
 }
 
-
-
-/* .cube2{
-    
-    height: 95vh;
-    width: 50vw;
-    background-color: rgba(0, 0, 0, 0.163);
-    margin-top: 50%;
-    
-} */
+.cube2 {
+        position: absolute; /* Utilisez position: absolute */
+        z-index: 3;
+        height: 80vh;
+        width: 47vw;
+        background-color: rgba(0, 0, 0, 0.163);
+       margin-top: 20%;
+        right: 0; 
+   
+}
 
 .titre5{
     color: white;
     text-align: center;
+    margin-top: 30%;
+    width: 20vw;
+    margin-left: 30%;
+    line-height: 7vh;
+    font-size: 5vh;
 }
 
-.cotedroit2{
-   height: 100vh;
-   width: 40vw;
-   background-image: url(img/pexels-karolina-grabowska-6805420.jpg);
-   background-position: center;
-   background-size: cover;
-}
-.cotedroit2::before{
-    content: "";
-    height: 95vh;
-    width: 50vw;
-    background-color: rgba(0, 0, 0, 0.163);
-
-}
 .totalsky{
 display: flex;
 width: 50vw;
@@ -350,16 +346,15 @@ height: 10vh;
 }
 
 .sky img{
-   
-    width: 4vw;
+     width: 7vw;
 }
 
 .sky2{
     display: flex; 
     justify-content: flex-start;
     flex-direction: row;
-    margin: auto;
     width: 50vw;
+  
 }
 .rondNoir{
     width: 30px; 
@@ -367,6 +362,7 @@ height: 10vh;
   background-color: black; 
   border-radius: 50%; 
   margin-right: 5%;
+  margin: 4%;
 }
 .rondBlanc{
     width: 30px; 
@@ -374,14 +370,118 @@ height: 10vh;
     background-color:white; 
     border: 3px solid black;
     border-radius: 50%; 
+    margin: 4%;
       
 }
-.skill .skill2{
-    display: flex;
-    
+
+.sky p{
+    color: #CFC2B2;
+    font-size: medium;
+}
+
+/*Contacts*/
+
+body .global{
+    background-image: url(img/marbre.png);
+    opacity: 80%;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0%;
+    margin: 0%;
+  
 }
 
 
+.logoac img{
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 60px;
+    width: 60px;
+   
+}
+
+.logoac{
+    height: 60px;
+    width: 60px;
+    border-radius: 50% ;
+}
+
+
+.merci{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+   font-size: 30px;
+   color: white;
+   margin-right: 3%;
+
+}
+
+.logotitre{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+    letter-spacing: 10px;
+}
+
+  input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;}
+  
+  input[type=submit] {
+    background-color: #A8A088;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  
+  .container {
+    box-sizing : border-box;
+    border-radius:5px;
+   color: white;
+    padding:20px;
+    width: 100%;
+    max-width: 440px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.421);
+  }
+
+  form{
+    width: 800px; 
+  }
+  
+  form  .lecontact{
+    margin-bottom: 10%;
+  }
+/* 
+  @media screen and (max-width: 480px){
+    .merci { font-size: 20px; 
+    }  
+  } */
 
 
 
