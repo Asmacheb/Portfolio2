@@ -18,13 +18,19 @@
 .navbar{
     background-color:rgba(255, 255, 255, 0.618);
     display: flex;
-   justify-content: flex-end;
+   justify-content: space-between;
     text-decoration: none;
     padding: 20px;
     width: 100%;
     height: 90px; 
   }
-
+.logoac img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 40vw;
+   
+}
   .navbar li{
     float: left;
     overflow: hidden;
@@ -44,7 +50,7 @@
 
 
 .UL li:hover{
-    background: #;   
+    background: #C0AA8C;   
     color: white;
 }
 /* 
@@ -63,8 +69,10 @@
 
 .titre1 h1{
     text-align: center;
-    color: #65451F;   
+    color:white;   
+   text-shadow:5px 5px 5px #65451F;
    margin-top: 20%;
+   font-size: 6vh;
 }
 
 /*Présentation*/
@@ -112,27 +120,268 @@ body{
 
 /*Compétence*/
 
-.body3{
+/* .body3{
     height: 100vh;
     width: 100vw;
     background-size: cover;
-}
+} */
 
 .back2{
-    background-image: url(img/fond2.png);
+    background-image: url(img/TEST.png);
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    position: fixed;
 } 
 
 .titre3{
     color: white;
     text-align: center; 
+    margin-top: 3%;
+    font-size: 3vh;
+ 
+}
+.lesformes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15%;
+    
+
 }
 
 .forme1{
-    border-radius: 50px 50px;
-    color:black;
+    border-radius: 100% 100%  0% 0% ;
+    background-color:#A59682;
     height: 20vh;
     width: 10vw;
+    border: 1px solid white;
+    margin-right: 39vw ;
+   
+    
 }
+
+.forme2{
+    border-radius:  100% 100%  0% 0% ;
+    background-color:#A59682;
+    height: 20vh;
+    width: 10vw;
+    border: 1px solid white;
+    
+}
+
+.ul1 {
+    height: 200px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vh;
+    padding: 20%;
+    list-style: none;
+    line-height: 15px;
+}
+
+.ul2 {
+    height: 200px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vh;
+    padding: 20%;
+    line-height: 15px;
+    list-style: none;
+}
+
+/*DWWM*/
+
+.total{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+   
+
+}
+.cotedroit{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+
+
+
+.cube{
+    
+    height: 95vh;
+    width: 47vw;
+    background-color: rgba(0, 0, 0, 0.163);
+    margin-top: 50%;
+    vertical-align: middle;
+  
+}
+
+.titre4{
+    color: white;
+    text-align: center; 
+   
+}
+
+
+.cotegauche{
+   height: 100%;
+   width: 40%;
+   background-image: url(img/pexels-karolina-grabowska-4207892.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.totalskill{
+display: flex;
+width: 50vw;
+height: 10vh;
+
+}
+
+.skill{
+    width: 10vw;
+    margin: auto;
+}
+
+.skill img{
+    aspect-ratio: 1;
+    width: 4vw;
+}
+
+.skill2{
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: auto;
+    width: 50vw;
+}
+.rondNoir{
+    width: 30px; 
+  height: 30px; 
+  background-color: black; 
+  border-radius: 50%; 
+  margin-right: 5%;
+}
+.rondBlanc{
+    width: 30px; 
+    height: 30px; 
+    background-color:white; 
+    border: 3px solid black;
+    border-radius: 50%; 
+      
+}
+.skill .skill2{
+    display: flex;
+    
+}
+
+/*CM*/
+
+.total2{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+   
+
+}
+.cotegauche2{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 10vh;
+  
+}
+
+
+
+/* .cube2{
+    
+    height: 95vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.163);
+    margin-top: 50%;
+    
+} */
+
+.titre5{
+    color: white;
+    text-align: center;
+}
+
+.cotedroit2{
+   height: 100vh;
+   width: 40vw;
+   background-image: url(img/pexels-karolina-grabowska-6805420.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.cotedroit2::before{
+    content: "";
+    height: 95vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.163);
+
+}
+.totalsky{
+display: flex;
+width: 50vw;
+height: 10vh;
+
+}
+
+.sky{
+    width: 10vw;
+    margin: auto;
+}
+
+.sky img{
+   
+    width: 4vw;
+}
+
+.sky2{
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: auto;
+    width: 50vw;
+}
+.rondNoir{
+    width: 30px; 
+  height: 30px; 
+  background-color: black; 
+  border-radius: 50%; 
+  margin-right: 5%;
+}
+.rondBlanc{
+    width: 30px; 
+    height: 30px; 
+    background-color:white; 
+    border: 3px solid black;
+    border-radius: 50%; 
+      
+}
+.skill .skill2{
+    display: flex;
+    
+}
+
+
+
+
+
