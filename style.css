@@ -359,7 +359,7 @@ height: 10vh;
 .rondNoir{
     width: 30px; 
   height: 30px; 
-  background-color: black; 
+  background-color: rgb(124, 96, 62); 
   border-radius: 50%; 
   margin-right: 5%;
   margin: 4%;
@@ -368,7 +368,7 @@ height: 10vh;
     width: 30px; 
     height: 30px; 
     background-color:white; 
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 50%; 
     margin: 4%;
       
