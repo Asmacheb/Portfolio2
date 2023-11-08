@@ -75,6 +75,69 @@
    font-size: 6vh;
 }
 
+@media screen and (min-width: 1001px){
+    .formattel{
+     display: none;
+    }
+   .menuburger{
+    display: none;
+   }
+}
+
+@media screen and (min-width:401px) and (max-width: 1000px) {
+    .UL li{
+        display: none;
+    }
+    .menuburger img{
+        height: 40px;
+        width: 40px;
+    
+    }
+    .menuburger{
+        position: absolute;
+        top: 30px;
+        right: 4px; 
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .logoac .menuburger{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .UL li{
+        display: none;
+    }
+    .menuburger img{
+        height: 40px;
+        width: 40px;
+      
+    }
+    .menuburger{
+        position: absolute;
+        top: 30px;
+        right: 10px; 
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .logoac .menuburger{
+        display: flex;
+        justify-content: space-between;
+    }
+   .titre1 h1{
+    font-size: 6vh;
+   }
+    .titre1{
+       top: 50px;
+    }
+}
+
 /*Présentation*/
 
 body{
@@ -86,12 +149,12 @@ body{
     height: 100vh;
 }
 
-
 .titre2 {
     color: #C0AA8C;
     width: 50%;
     margin-bottom: 50%;
     margin-left: 10%;
+    font-size: 30px;
 }
 
 .rectanglemarron{
@@ -102,10 +165,8 @@ body{
     width: 90vw;
     background-color: #C0AA8C;
     color: white;
-    margin-left: 6vw;
-    
+    margin-left: 6vw;  
 }
-
 
 .imgdroite img{
     height: 70vh;
@@ -118,7 +179,114 @@ body{
  font-size: 3vh;
  margin-left: -20vw;
 }
+@media screen and (min-width: 1000px) {
+    .titretel{
+        display: none;
+    }
+    }
 
+/*   téléphone */
+
+@media screen and (max-width: 400px) {
+
+    .titretel{
+        display: flex;
+       justify-content: center;
+        text-align: center; 
+        font-size: 16px;
+        color: white;
+    }
+    .titretel h1{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .backtel{
+        background-attachment: fixed;
+        background-image: url(img/pexels-karolina-grabowska-6958755.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;   
+    }
+
+    .titre2 {
+     visibility: hidden;
+    }
+      
+   .rectanglemarron {
+    position: absolute; /* Utilisez une position absolue pour empiler le rectangle marron au-dessus de l'image de fond */
+    background-color: #C0AA8C;
+     margin-top: 50%;
+     top: 0; 
+     left: 8%; 
+     height: 50%; 
+     width: 70%; 
+     z-index: 1; 
+        }
+    
+    .imgdroite {
+   visibility:hidden ;
+    }
+  
+   div .texte {
+      font-size: 17px;
+      text-align: justify;
+
+    }
+  }
+  
+  /*  tablette */
+  @media screen and (min-width: 401px) and (max-width: 1000px) {
+    .titretel{
+        display: flex;
+       justify-content: center;
+        text-align: center; 
+        font-size: 20px;
+        color: white;
+    }
+    .titretel h1{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .backtel{
+        background-attachment: fixed;
+        background-image: url(img/pexels-karolina-grabowska-6958755.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;   
+    }
+
+    .titre2 {
+     visibility: hidden;
+    }
+      
+   .rectanglemarron {
+    position: absolute; /* Utilisez une position absolue pour empiler le rectangle marron au-dessus de l'image de fond */
+    background-color: #C0AA8C;
+     margin-top: 30%;
+     top: 0; 
+     left: 13%; 
+     height: 50%; 
+     width: 70%; 
+     z-index: 1; 
+        }
+    
+    .imgdroite {
+   visibility:hidden ;
+    }
+  
+   div .texte {
+      font-size: 26px; 
+      text-align: justify;
+      width: 400px;
+     text-align: center;
+    
+  }
+ }
+  
 /*Compétence*/
 
 
@@ -153,6 +321,7 @@ body{
     width: 10vw;
     border: 1px solid white;
     margin-right: 39vw ;
+    cursor: pointer;
    
     
 }
@@ -162,8 +331,8 @@ body{
     background-color:#A59682;
     height: 20vh;
     width: 10vw;
-    border: 1px solid white;
-    
+    border: 1px solid white; 
+    cursor: pointer;  
 }
 
 .ul1 {
@@ -190,9 +359,166 @@ body{
     align-items: center;
     font-size: 1vh;
     padding: 20%;
-    line-height: 15px;
+    line-height: 17px;
     list-style: none;
+    margin-top: 15%;
 }
+
+/*animation*/
+.forme1:hover {
+    transform: scale(4); 
+    transition: transform 0.3s; 
+    border: 1px solid #65451F;   
+    background-color: white;
+}
+.forme1 .ul1:hover{
+    color: #65451F;
+}
+.forme2:hover {
+    transform: scale(4); 
+    transition: transform 0.3s; 
+    border: 1px solid #65451F;   
+    background-color: white;
+}
+.forme2 .ul2:hover{
+    color: #65451F;
+}
+
+
+/* tablette */
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .lesformes {
+        flex-direction: column; 
+        margin-top: 21%; 
+        align-items: center;
+        margin-right: 1%;
+    }
+
+    .forme1{
+        display: flex;
+        align-items: center;
+        margin-left: 40%;
+        width: 20%;
+    }
+
+    .forme2{
+        display: flex;
+        align-items: center;
+        width: 20%;
+    }
+
+    .ul1{
+      margin-left: 10%;
+    }
+    .ul2{
+        margin-left: 10%;
+      }
+
+      .forme1:hover {
+        transform: scale(2); 
+        transition: transform 0.3s; 
+        border: 1px solid #65451F;   
+        background-color: white;
+    }
+    .forme1 .ul1:hover{
+        color: #65451F;
+    }
+    .forme2:hover {
+        transform: scale(2); 
+        transition: transform 0.3s; 
+        border: 1px solid #65451F;   
+        background-color: white;
+    }
+    .forme2 .ul2:hover{
+        color: #65451F;
+    }
+    
+  
+    .back2{
+        background-image: url(img/pexels-rodion-kutsaiev-7911758.jpeg);
+       height: 100vh;
+       width: 100vw;
+       background-size: cover;
+    }
+}  
+
+
+/*téléphone */
+@media screen and (max-width: 400px) {
+    .titre3 h1{
+        font-size: 4vh;
+    }
+    .lesformes {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 60%;
+        margin-right:1% ;
+    }
+
+    .forme1{
+        width: 40%;
+        margin-left: 40%;
+        height: 16vh;
+    }
+    .forme2{
+        width: 40%;
+        height: 16vh;
+    }
+     .ul1 li{
+        font-size: 1vh; 
+      line-height: 10px;
+      margin-left: 11px;
+      
+    }
+
+    .ul2 li{
+        font-size: 1vh; 
+      line-height: 10px;
+      margin-left: 11px;
+    }
+
+
+    .back2{
+        background-image: url(img/pexels-rodion-kutsaiev-7911758.jpeg);
+        background-position: center; /* Centrez l'image de fond horizontalement */
+        background-attachment: scroll;
+    }
+
+    .forme1:hover {
+        transform: scale(2); 
+        transition: transform 0.3s; 
+        border: 1px solid #65451F;   
+        background-color: white;
+    }
+    .forme2:hover {
+        transform: scale(2); 
+        transition: transform 0.3s; 
+        border: 1px solid #65451F;   
+        background-color: white;
+    }
+}
+    @media screen and (max-width: 320px) {
+        .lesformes {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-top: 70%;
+            margin-right:1% ; 
+        }
+    
+        .ul1 li{
+            margin-right: 20%;  
+            line-height: 10px;
+        }
+        .ul2 li{
+            margin-right: 20%;
+            line-height: 10px;  
+        }
+}
+
+
+
 
 /*DWWM*/
 
@@ -200,8 +526,7 @@ body{
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: white;
-   
+    background-color: white;  
 
 }
 .cotedroit{
@@ -229,10 +554,8 @@ body{
     width: 20vw;
     margin-left: 30%;
     line-height: 7vh;
-   font-size: 4vh;
-   
+   font-size: 4vh; 
 }
-
 
 .cotegauche{
    height: 100%;
@@ -246,7 +569,6 @@ body{
 display: flex;
 width: 50vw;
 height: 10vh;
-
 }
 
 .skill{
@@ -286,6 +608,90 @@ height: 10vh;
     
 }
 
+@media screen and (min-width: 1001px){
+    .formattel{
+     display: none;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .formattel{
+     display: none;
+    }
+}
+/*  DWWM téléphone */
+@media screen and (max-width: 400px) {
+    .cotegauche{
+        display: none;
+       }
+        .cube{
+      display: none;
+       }
+    
+    .total {
+        background-position: center; 
+        background-attachment: scroll;
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       flex-direction: column;
+       background-size: cover;
+    }
+
+    .formattel{
+        display: flex;
+     justify-content: space-between;
+        width: 100vw;
+        height: 20vh;
+    }
+    .formattel img{
+        height: 25px;
+        width: 25px;
+    }
+    .formattel h1{
+        color: black;
+        text-align: center;
+     margin-top: 30px;
+        font-size: 25px;
+        width: 70%;
+        margin-left: 40px;  
+    }
+    .cotedroit {
+        width: 100vw; 
+        align-items: center;
+       height: 70px;
+    }
+    .rondNoir{
+        width: 15px; 
+        height: 15px; 
+}
+    .skill .skill2{
+        margin-bottom: 50px;
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .totalskill{
+        height: 30vh;
+        width: 100vw; 
+        display: flex;
+        align-items: center;
+        margin-right: 40vw;
+       
+}
+    .rondBlanc{
+    width: 15px; 
+    height: 15px; 
+   }
+
+.skill img{
+    height: 25px;
+    width: 25px;
+    margin-left: 15vw;
+}
+}
+
 /*CM*/
 
 .total2{
@@ -294,6 +700,7 @@ height: 10vh;
     width: 100vw;
     background-color: white;
 }
+
 .cotedroit2{
     height: 100vh;
     width: 45vw;
@@ -303,24 +710,25 @@ height: 10vh;
     z-index: 1;
  }
 
+
 .cotegauche2{
     height: 100vh;
-    width: 55vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;  
     margin-top: 30vh; 
     margin-left: 16vw;
+    align-items: center;
 }
 
 .cube2 {
-        position: absolute; /* Utilisez position: absolute */
+        position: absolute; 
         z-index: 3;
         height: 80vh;
         width: 47vw;
         background-color: rgba(0, 0, 0, 0.163);
        margin-top: 20%;
-        right: 0; 
-   
+        right: 0;   
 }
 
 .titre5{
@@ -359,7 +767,7 @@ height: 10vh;
 .rondNoir{
     width: 30px; 
   height: 30px; 
-  background-color: rgb(124, 96, 62); 
+  background-color: black; 
   border-radius: 50%; 
   margin-right: 5%;
   margin: 4%;
@@ -376,7 +784,93 @@ height: 10vh;
 
 .sky p{
     color: #CFC2B2;
-    font-size: medium;
+    font-size: 15px;
+}
+@media screen and (min-width: 1001px){
+    .formattel{
+     display: none;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .formattel{
+     display: none;
+    }
+}
+/*  CM téléphone */
+@media screen and (max-width: 400px) {
+    .cotedroit2{
+        display: none;
+       }
+        .cube2{
+      display: none;
+       }
+    
+    .total2{
+      
+       height: 100vh;
+       width: 100vw;
+     
+    }
+
+    .formattel{
+        display: flex;
+     justify-content: space-between;
+        width: 100vw;
+        height: 20vh;
+    }
+    .formattel img{
+        height: 25px;
+        width: 25px;
+    }
+    .formattel h1{
+        color: black;
+        text-align: center;
+     margin-top: 30px;
+        font-size: 25px;
+        width: 70%;
+        margin-left: 40px;  
+    }
+    .cotegauche2{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+    }
+    .rondNoir{
+        width: 15px; 
+        height: 15px; 
+}
+    .sky .sky2{
+        margin-bottom: 50px;
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .totalsky{
+        height: 30vh;
+        width: 100vw; 
+        display: flex;
+        align-items: center;
+        margin-right: 40vw; 
+        margin-top: -25vh;
+}
+    .rondBlanc{
+    width: 15px; 
+    height: 15px; 
+   }
+
+   .sky img{
+    height: 45px;
+    width: 80px;
+}
+   .sky p{
+    font-size: 9px;
+
+}
 }
 
 /*Contacts*/
@@ -477,11 +971,12 @@ body .global{
   form  .lecontact{
     margin-bottom: 10%;
   }
-/* 
+
   @media screen and (max-width: 480px){
-    .merci { font-size: 20px; 
+    .merci { font-size: 25px; 
     }  
-  } */
-
-
+    .container{
+        width: 90%;
+    }
+  }
 
